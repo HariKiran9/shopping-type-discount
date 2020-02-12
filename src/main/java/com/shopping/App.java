@@ -15,7 +15,9 @@ public class App {
 		CardType regCardType = regularFactory.getCardType(cardType1);
 		double discountAmount1 = regCardType.calculateDiscount(15000);
 		System.out.println("Card Type : " + regCardType.getCardType() + " \tDiscount Gains Rs. : " + discountAmount1);
+
 		System.out.println("=========================================");
+
 		String cardType2 = "PREMIUM";
 		AbstractFactory premiumFactory = FactoryCreator.getFactory("cardtype");
 		CardType preCardType = premiumFactory.getCardType(cardType2);
